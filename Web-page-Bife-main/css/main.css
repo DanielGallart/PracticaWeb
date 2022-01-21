@@ -7,7 +7,8 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 20px;
+    scroll-padding-top: 4rem;
+    font-size: 16px;
 }
 
 body {
@@ -23,10 +24,16 @@ body {
     width: 100%;
     background: #4B1409;
     position: sticky;
+    z-index: 2;
     top: 0px;
 }
 .nav__logo {
     margin-left: 160px;
+}
+.logo__image {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
 }
 .nav__items {
     display: flex;
@@ -72,7 +79,7 @@ body {
     line-height: 82px;
     text-align: center;
     text-decoration-line: underline;
-    color: #000000;
+    color: #4B1409;
     width: 100%;
   }
 @media screen and (max-width:768px) {
@@ -171,14 +178,14 @@ body {
 
 .menu-big-title{
     font-size: 1.5rem;
-    color:  #ffffff;
+    color:  #AC664D;
     text-align:center;
     padding-top: 1rem;
 }
 
 .menu-small-title{
     font-size: 1.2rem;
-    color:  #ffffff;
+    color:  #AC664D;
     text-align: center;
     padding-top: 0.5rem;
 }
@@ -207,14 +214,14 @@ body {
 }
 
 .menu-name{
-    color: #ffffff;
+    color: #AC664D;
     display: grid;
     text-align: center;
     padding-top: 0.8rem;
 }
 
 .menu-price{
-    color: #ffffff;
+    color: #AC664D;
     display: grid;
     text-align: center;
     padding-top: 0.8rem;
@@ -224,14 +231,12 @@ body {
 @media screen and (max-width: 480px){
     .menu-big-title{
         font-size: 1rem;
-        color: #ffffff;
         text-align: center;
         padding-top: 1rem;
     }
     
     .menu-small-title{
         font-size: 0.8rem;
-        color: #ffffff;
         text-align: center;
         padding-top: 0.5rem;
     }
@@ -240,14 +245,12 @@ body {
 @media (min-width: 481px) and (max-width: 768px){
     .menu-big-title{
         font-size: 1.2rem;
-        color: #ffffff;
         text-align: center;
         padding-top: 1rem;
     }
     
     .menu-small-title{
         font-size: 1rem;
-        color: #ffffff;
         text-align: center;
         padding-top: 0.5rem;
     }
@@ -255,95 +258,86 @@ body {
 /*Marc*/
 
 /*Nahomy*/
-.about__us {
-    min-height: 621px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.about{
+    /*background: url(khan.jpg) no-repeat left;*/
+    background-size: 55%;
     background-color: #AC664D;
+    overflow: hidden;
+    padding: 100px 0;
 }
-.aboutus__containerone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 463px;
-    height: 109px;
+.inner-section{
+    width: 55%;
+    float: right;
     background-color: #541C0A;
-    margin-left: 32%;
-    margin-right: 32%;
-    box-shadow: 0px 0px 4px 4px #541C0A;
+    padding: 140px;
+    box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
 }
-.container__title {
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.about_title{
     font-size: 36px;
     line-height: 46px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.aboutus{
+    font-size: 24px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+.skills button{
+    font-size: 22px;
     text-align: center;
-    color: #FFFFFF;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #AC664D;
+    color: white;
+    cursor: pointer;
 }
-.aboutus__containertwo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #541C0A;
 }
-.aboutus__box__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 659px;
-    height: 406px;
-    background-color: #541C0A;
-    box-shadow: 0px 0px 4px 4px #541C0A;
-    margin: 25px;
-}
-.aboutus__text {
-    font-size: 36px;
-    line-height: 46px;
-    text-align: justify;
-    color: #FFFFFF;
-}
-.aboutus__picture {
-    margin: 25px;
-}
-.aboutus__image {
-    width: 100%;
-}
-@media screen and (max-width:768px) {
-    .aboutus__text {
-        font-size: 31px;
-        line-height: 41px;
-    }
-    .aboutus__box__text {
-        width: 550px;
-        height: 350px;
-    }
-    .aboutus__containerone {
-        width: 400px;
-        height: 100px;
-    }
-    .container__title {
-        font-size: 30px;
-        line-height: 40px;
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
     }
 }
-@media screen and (max-width:563px){ 
-    .aboutus__text {
-        font-size: 22px;
-        line-height: 25px;
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
     }
-    .aboutus__box__text {
-        width: 300px;
-        height: 200px;
+    .inner-section{
+        width: 100%;
     }
-    .aboutus__containerone {
-        width: 200px;
-        height: 50px;
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
     }
-    .container__title {
-        font-size: 22px;
-        line-height: 25px;
+    .inner-section{
+        padding: 60px;
     }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+.aboutusimage{
+    width: 45%;
+    margin-top: 2%;
 }
 /*Alexandra*/
 .contactus {
@@ -364,22 +358,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    color: #FFFFFF;
+    color: #AC664D;
 }
 .contact__title {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 57px;
     text-align: center;
-    margin: 16px;
+    margin: 1rem;
 }
 .contact__text {
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25rem;
+    line-height: 2.69rem;
     font-family: Poly;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .contact__link {
-    color:#FFFFFF;
+    color:#AC664D;
 }
 .footer__contacts {
     min-height: 117px;
@@ -395,34 +389,34 @@ body {
     justify-content: space-evenly;
 }
 .social__item {
-    margin:0 30px;
+    margin:0 1.88rem;
 }
 .social__image {
-    width: 20px;
+    width: 1.25rem;
 }
 .contacts__copyright {
     font-family: Poly;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
+    font-size: 1.5rem;
+    line-height: 1.81rem;
+    color: #AC664D;
 }
 @media screen and (max-width:563px) {
     .contact__title {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 2.5rem;
+        line-height: 3.13rem;
     }
     .contact__text {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 1.88rem;
+        line-height: 2.5rem;
     }
 }
 @media screen and (max-width : 375px) { 
     .contact__title {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 1.88rem;
+        line-height: 2.5rem;
     }
     .contact__text {
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 1.56rem;
+        line-height: 2.19rem;
     }
 }
