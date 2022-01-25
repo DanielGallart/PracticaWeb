@@ -1,0 +1,32 @@
+{
+  "web": {
+    "nav":{
+      "home": "Inicio",
+      "menu": "Menú",
+      "reservation": "Reservas",
+      "about_us": "Acerca De Nosotros"
+    },
+    "welcome": "BIENVENIDOS A BIFE RESTAURANT",
+    "menu":{
+      "menu_title": "MEJORES BISTECS DE BIFE",
+      "menu_subtitle": "Menú",
+      "menu_first_dish": "Bistec Marinado",
+      "menu_first_price": "17,70€",
+      "menu_second_dish": "Bistec Con Marinada De Ajos",
+      "menu_second_price": "22,13€",
+      "menu_third_dish": "Bistec Especiado Marinado Con Limón",
+      "menu_third_price": "23,90€"
+    },
+    "about_us":{
+      "about_us_title": "Acerca De Nosotros",
+      "about_us_text": "",
+      "about_us_button": "Contáctanos"
+    },
+    "contact_us":{
+      "contact_us_title": "Contáctanos",
+      "contact_us_email": "Email: biferestaurant@gmail.com",
+      "contact_us_phone": "Teléfono: 933268350",
+      "contact_us_location": "Calle de Sant Salvador 61, 08024"
+    }
+  }
+}

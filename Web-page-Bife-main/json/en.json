@@ -1,0 +1,32 @@
+{
+  "web": {
+    "nav":{
+      "home": "Home",
+      "menu": "Menu",
+      "reservation": "Reservation",
+      "about_us": "About Us"
+    },
+    "welcome": "WELCOME TO BIFE RESTAURANT",
+    "menu":{
+      "menu_title": "BEST STEAKS IN BIFE",
+      "menu_subtitle": "Menu",
+      "menu_first_dish": "Marinated Top Round Steak",
+      "menu_first_price": "$20",
+      "menu_second_dish": "Ribeye Steaks With Garlic Marinade",
+      "menu_second_price": "$25",
+      "menu_third_dish": "Spiced Lime-Marinated Round Steaks",
+      "menu_third_price": "$27"
+    },
+    "about_us":{
+      "about_us_title": "About Us",
+      "about_us_text": "",
+      "about_us_button": "Contact Us"
+    },
+    "contact_us":{
+      "contact_us_title": "Contact Us",
+      "contact_us_email": "Email: biferestaurant@gmail.com",
+      "contact_us_phone": "Phone: 933268350",
+      "contact_us_location": "Sant Salvador Street 61, 08024"
+    }
+  }
+}

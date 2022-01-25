@@ -7,6 +7,9 @@
     <title>nav y header</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/main.js" defer></script>
+    <script src="./js/language.js" defer></script>
 </head>
 <body>
     <!--Alexandra-->
@@ -20,10 +23,13 @@
             <div class="burger__line"></div>
         </div>
         <ul class="nav__items">
-            <li class="item"><a href="#header" class="nav__links">Home</a></li>
-            <li class="item"><a href="#menu-section" class="nav__links">Menu</a></li>
-            <li class="item"><a href="#reservation" class="nav__links">Reservation</a></li>
-            <li class="item"><a href="#about__us" class="nav__links">About Us</a></li>
+            <li class="item"><a href="#header" class="nav__links" id="t-home">Home</a></li>
+            <li class="item"><a href="#menu-section" class="nav__links" id="t-menu">Menu</a></li>
+            <li class="item"><a href="#reservation" class="nav__links" id ="t-reservations">Reservation</a></li>
+            <li class="item"><a href="#about__us" class="nav__links" id="t-about-us">About Us</a></li>
+            <li class="item"><button onclick="changeLanguage('ca')">Català</button></li>
+            <li class="item"><button onclick="changeLanguage('en')">English</button></li>
+            <li class="item"><button onclick="changeLanguage('es')">Español</button></li>
         </ul>
     </nav>
     <header class="header" id="header">
@@ -31,32 +37,32 @@
             <source src="./video/header-video.mp4" type="video/mp4">
         </video>
         <div class="header__title">
-            <h1>WELCOME TO BIFE<br>RESTAURANT</h1>
+            <h1 id="t-welcome">WELCOME TO BIFE<br>RESTAURANT</h1>
         </div>
     </header>
     <main>
         <!-- DANI-->
         <section class = "menu-section" id="menu-section">
             <div class = "menu-title">
-                <h2 class = "menu-big-title">BEST STEAKS IN BIFE</h2>
-                <h3 class = "menu-small-title">Menu</h3>
+                <h2 class = "menu-big-title" id="t-menu-title">BEST STEAKS IN BIFE</h2>
+                <h3 class = "menu-small-title" id="t-menu-subtitle">Menu</h3>
             </div>
             <div class = "menu-display">
                 <div class = "menu-images">
                     <picture class = "menu-image">
                         <img class= "menu-image-1" src="./images/menu-first-image.webp" alt="Image not found">
-                        <p class = "menu-name">Marinated Top Round Steak</p>
-                        <p class = "menu-price">$20</p>
+                        <p class = "menu-name" id="t-menu-first-dish">Marinated Top Round Steak</p>
+                        <p class = "menu-price" id="t-menu-first-price">$20</p>
                     </picture>
                     <picture class = "menu-image">
                         <img class = "menu-image-1" src="./images/menu-second-image.webp" alt="Image not found">
-                        <p class = "menu-name">Ribe-Eye Steaks With Garlic Marinade</p>
-                        <p class = "menu-price">$25</p>
+                        <p class = "menu-name" id="t-menu-second-dish">Ribeye Steaks With Garlic Marinade</p>
+                        <p class = "menu-price" id="t-menu-second-price">$25</p>
                     </picture>
                     <picture class ="menu-image">
                         <img class = "menu-image-1" src="./images/menu-third-image.webp" alt="Image not found">
-                        <p class = "menu-name">Spiced Lime-Marinated Round Steaks</p>
-                        <p class = "menu-price menu-price-3">$27</p>
+                        <p class = "menu-name" id="t-menu-third-dish">Spiced Lime-Marinated Round Steaks</p>
+                        <p class = "menu-price menu-price-3" id="t-menu-third-price">$27</p>
                     </picture>
                 </div>
             </div>
@@ -68,7 +74,7 @@
         <!--Nahomy-->
         <section class="about" id="about__us">
             <div class="inner-section">
-                <h2 class="about_title">About Us</h2>
+                <h2 class="about_title" id="t-about-us-title">About Us</h2>
                 <p class="aboutus">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Doloribus velit ducimus, enim inventore earum, eligendi 
@@ -77,7 +83,7 @@
                     nisi neque voluptates sit deleniti autem error eos totam nisi neque.
                 </p>
                 <div class="skills">
-                    <button>Contact Us</button>
+                    <button id="t-about-us-button">Contact Us</button>
                 </div>
             </div>
             <picture class="aboutuspicture">
@@ -92,10 +98,10 @@
                 <img class="contactus__location" src="./images/footer-location.png" alt="Location">
             </picture>
             <div class="contactus__info">
-                <h2 class="contact__title">Contact Us</h2>
-                <p class="contact__text">Email: <a class="contact__link" href="mailto:biferestaurant@gmail.com"> biferestaurant@gmail.com </a></p>
-                <p class="contact__text">Phone: <a class="contact__link" href="tel:+933268350"> 933268350 </a></p>
-                <p class="contact__text">Carrer de Sant Salvador 61, 08024</p>
+                <h2 class="contact__title" id="t-contact-us-title">Contact Us</h2>
+                <p class="contact__text" id="t-contact-us-email">Email: <a class="contact__link" href="mailto:biferestaurant@gmail.com"> biferestaurant@gmail.com </a></p>
+                <p class="contact__text" id="t-contact-us-phone">Phone: <a class="contact__link" href="tel:+933268350"> 933268350 </a></p>
+                <p class="contact__text" id="t-contact-us-location">Carrer de Sant Salvador 61, 08024</p>
             </div>
         </section>
         <section class="footer__contacts">
@@ -107,6 +113,5 @@
             <p class="contacts__copyright"> © 2022 Bife </p>
         </section>
     </footer>
-    <script src="main.js"></script>
 </body>
 </html>
