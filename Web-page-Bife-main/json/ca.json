@@ -6,7 +6,7 @@
       "reservation": "Reserves",
       "about_us": "Sobre nosaltres"
     },
-    "welcome": "BENVINGUTS A BIFE RESTAURANT",
+    "welcome": "BENVINGUTS A BIFE <br>RESTAURANT",
     "menu":{
       "menu_title": "MILLORS BISTECS DE BIFE",
       "menu_subtitle": "Menú",
@@ -24,8 +24,10 @@
     },
     "contact_us":{
       "contact_us_title": "Contacta'ns",
-      "contact_us_email": "Email: biferestaurant@gmail.com",
-      "contact_us_phone": "Telèfon: 933268350",
+      "contact_us_email_1": "Email: ",
+      "contact_us_email_2": "biferestaurant@gmail.com",
+      "contact_us_phone_1": "Telèfon: ",
+      "contact_us_phone_2": "933268350",
       "contact_us_location": "Carrer de Sant Salvador 61, 08024"
     }
   }

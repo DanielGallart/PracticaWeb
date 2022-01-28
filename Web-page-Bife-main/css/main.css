@@ -82,6 +82,11 @@ body {
     color: #4B1409;
     width: 100%;
   }
+
+.flags{
+    height: 3vh;
+}
+  
 @media screen and (max-width:768px) {
     
     .burger {

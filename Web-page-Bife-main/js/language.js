@@ -39,8 +39,10 @@ async function changeLanguage(lang) {
   document.getElementById('t-about-us-button').innerHTML = data.web.about_us.about_us_button;
 
   document.getElementById('t-contact-us-title').innerHTML = data.web.contact_us.contact_us_title;
-  document.getElementById('t-contact-us-email').innerHTML = data.web.contact_us.contact_us_email;
-  document.getElementById('t-contact-us-phone').innerHTML = data.web.contact_us.contact_us_phone;
+  document.getElementById('t-contact-us-email-1').innerHTML = data.web.contact_us.contact_us_email_1;
+  document.getElementById('t-contact-us-email-2').innerHTML = data.web.contact_us.contact_us_email_2;
+  document.getElementById('t-contact-us-phone-1').innerHTML = data.web.contact_us.contact_us_phone_1;
+  document.getElementById('t-contact-us-phone-2').innerHTML = data.web.contact_us.contact_us_phone_2;
   document.getElementById('t-contact-us-location').innerHTML = data.web.contact_us.contact_us_location;
 }
 

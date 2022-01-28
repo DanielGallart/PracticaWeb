@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bife, meat, restaurant, best, enjoy, food, grill, Barcelona">
+
     <title>nav y header</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -27,9 +29,9 @@
             <li class="item"><a href="#menu-section" class="nav__links" id="t-menu">Menu</a></li>
             <li class="item"><a href="#reservation" class="nav__links" id ="t-reservations">Reservation</a></li>
             <li class="item"><a href="#about__us" class="nav__links" id="t-about-us">About Us</a></li>
-            <li class="item"><button onclick="changeLanguage('ca')">Català</button></li>
-            <li class="item"><button onclick="changeLanguage('en')">English</button></li>
-            <li class="item"><button onclick="changeLanguage('es')">Español</button></li>
+            <li class="item"><img class="flags" src="./images/cataloniaFlag.png" alt="Image not found" onclick="changeLanguage('ca')"></li>
+            <li class="item"><img class="flags" src="./images/englandFlag.png" alt="Image not found" onclick="changeLanguage('en')"></li>
+            <li class="item"><img class="flags" src="./images/spainFlag.png" alt="Image not found" onclick="changeLanguage('es')"></li>
         </ul>
     </nav>
     <header class="header" id="header">
@@ -99,8 +101,8 @@
             </picture>
             <div class="contactus__info">
                 <h2 class="contact__title" id="t-contact-us-title">Contact Us</h2>
-                <p class="contact__text" id="t-contact-us-email">Email: <a class="contact__link" href="mailto:biferestaurant@gmail.com"> biferestaurant@gmail.com </a></p>
-                <p class="contact__text" id="t-contact-us-phone">Phone: <a class="contact__link" href="tel:+933268350"> 933268350 </a></p>
+                <p class="contact__text"><span id="t-contact-us-email-1">Email: </span><a class="contact__link" id="t-contact-us-email-2" href="mailto:biferestaurant@gmail.com"> biferestaurant@gmail.com </a></p>
+                <p class="contact__text"><span id="t-contact-us-phone-1">Phone: </span><a class="contact__link" id="t-contact-us-phone-2" href="tel:+933268350"> 933268350 </a></p>
                 <p class="contact__text" id="t-contact-us-location">Carrer de Sant Salvador 61, 08024</p>
             </div>
         </section>
