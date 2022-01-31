@@ -185,7 +185,7 @@ body {
     font-size: 1.5rem;
     color:  #AC664D;
     text-align:center;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
 }
 
 .menu-small-title{
@@ -237,7 +237,7 @@ body {
     .menu-big-title{
         font-size: 1rem;
         text-align: center;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
     }
     
     .menu-small-title{

@@ -35,7 +35,7 @@ async function changeLanguage(lang) {
   document.getElementById('t-menu-third-price').innerHTML = data.web.menu.menu_third_price;
 
   document.getElementById('t-about-us-title').innerHTML = data.web.about_us.about_us_title;
-  //document.getElementById('t-about-us-text').innerHTML = data.web.about_us.about_us_text;
+  document.getElementById('t-about-us-text').innerHTML = data.web.about_us.about_us_text;
   document.getElementById('t-about-us-button').innerHTML = data.web.about_us.about_us_button;
 
   document.getElementById('t-contact-us-title').innerHTML = data.web.contact_us.contact_us_title;
