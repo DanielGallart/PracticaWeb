@@ -1,6 +1,12 @@
 // Obtenir l'idioma de la URL si existeix i executar la funció "changeLanguage"
 const querystring = window.location.search; // Si la url és "https://miweb.es?lang=es" , retorna ?lang=es
 const urlParams = new URLSearchParams(querystring);
+/*Const nav-bar */
+const burger = document.querySelector('.burger');
+const navItems = document.querySelector ('.nav__items');
+const links = document.querySelectorAll ('.item');
+const headerVideo = document.querySelector ('.header');
+
 if (urlParams.get('lang')) {
   const lang = urlParams.get('lang');
   changeLanguage(lang);
@@ -34,6 +40,17 @@ async function changeLanguage(lang) {
   document.getElementById('t-menu-third-dish').innerHTML = data.web.menu.menu_third_dish;
   document.getElementById('t-menu-third-price').innerHTML = data.web.menu.menu_third_price;
 
+  document.getElementById('t-reservation-title').innerHTML = data.web.reservation.reservation_title;
+  document.getElementById('t-reservation-num-pers').innerHTML = data.web.reservation.reservation_num_pers;
+  document.getElementById('t-reservation-num-pers-1').innerHTML = data.web.reservation.reservation_num_pers_1;
+  document.getElementById('t-reservation-num-pers-2').innerHTML = data.web.reservation.reservation_num_pers_2;
+  document.getElementById('t-reservation-num-pers-3').innerHTML = data.web.reservation.reservation_num_pers_3;
+  document.getElementById('t-reservation-num-pers-4').innerHTML = data.web.reservation.reservation_num_pers_4;
+  document.getElementById('t-reservation-num-pers-5').innerHTML = data.web.reservation.reservation_num_pers_5;
+  document.getElementById('t-reservation-num-pers-6').innerHTML = data.web.reservation.reservation_num_pers_6;
+  document.getElementById('t-reservation-phone').placeholder = data.web.reservation.reservation_phone;
+  document.getElementById('t-reservation-email').placeholder = data.web.reservation.reservation_email;
+
   document.getElementById('t-about-us-title').innerHTML = data.web.about_us.about_us_title;
   document.getElementById('t-about-us-text').innerHTML = data.web.about_us.about_us_text;
   document.getElementById('t-about-us-button').innerHTML = data.web.about_us.about_us_button;
@@ -46,4 +63,12 @@ async function changeLanguage(lang) {
   document.getElementById('t-contact-us-location').innerHTML = data.web.contact_us.contact_us_location;
 }
 
-// changeLanguage('ca');
+/*Navegación*/
+
+burger.addEventListener('click', () => {
+    navItems.classList.toggle("open");
+    headerVideo.classList.toggle("disappear")
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+});

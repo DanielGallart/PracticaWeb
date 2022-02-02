@@ -17,6 +17,19 @@
       "menu_third_dish": "Spiced Lime-Marinated Round Steaks",
       "menu_third_price": "$27"
     },
+    "reservation":{
+      "reservation_title": "Reservation",
+      "reservation_num_pers": "*Select the amount of people",
+      "reservation_num_pers_1": "1 person",
+      "reservation_num_pers_2": "2 people",
+      "reservation_num_pers_3": "3 people",
+      "reservation_num_pers_4": "4 people",
+      "reservation_num_pers_5": "5 people",
+      "reservation_num_pers_6": "6 people",
+      "reservation_phone": "Phone",
+      "reservation_email": "Email",
+      "reservation_button": "Send"
+  },
     "about_us":{
       "about_us_title": "About Us",
       "about_us_text": "Since our opening in 1980, we bet for the new and scarce: the specialization in beef and ox meat. Thanks to this, our restaurant has been able to become in no time a clear model in this type of cuisine and one of the meat temples by excellence.",

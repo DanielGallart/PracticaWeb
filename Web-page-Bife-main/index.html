@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="bife, meat, restaurant, best, enjoy, food, grill, Barcelona">
-
-    <title>nav y header</title>
+    <title>Bife Restaurant</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
 
-    <script src="./js/main.js" defer></script>
-    <script src="./js/language.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <!--Alexandra-->
     <nav class="navigation">
         <picture class="nav__logo">
-            <img class="logo__image" src="./images/logo.png" alt="logo">
+            <img class="logo__image" src="./images/logo-BifeRestaurant.png" alt="logo">
         </picture>
         <div class="burger">
             <div class="burger__line"></div>
@@ -27,11 +27,14 @@
         <ul class="nav__items">
             <li class="item"><a href="#header" class="nav__links" id="t-home">Home</a></li>
             <li class="item"><a href="#menu-section" class="nav__links" id="t-menu">Menu</a></li>
-            <li class="item"><a href="#reservation" class="nav__links" id ="t-reservations">Reservation</a></li>
+            <li class="item"><a href="#reservation" class="nav__links" id="t-reservations">Reservation</a></li>
             <li class="item"><a href="#about__us" class="nav__links" id="t-about-us">About Us</a></li>
-            <li class="item"><img class="flags" src="./images/cataloniaFlag.png" alt="Image not found" onclick="changeLanguage('ca')"></li>
-            <li class="item"><img class="flags" src="./images/englandFlag.png" alt="Image not found" onclick="changeLanguage('en')"></li>
-            <li class="item"><img class="flags" src="./images/spainFlag.png" alt="Image not found" onclick="changeLanguage('es')"></li>
+            <li class="item"><img class="flags" src="./images/cataloniaFlag.png" alt="Image not found"
+                    onclick="changeLanguage('ca')"></li>
+            <li class="item"><img class="flags" src="./images/englandFlag.png" alt="Image not found"
+                    onclick="changeLanguage('en')"></li>
+            <li class="item"><img class="flags" src="./images/spainFlag.png" alt="Image not found"
+                    onclick="changeLanguage('es')"></li>
         </ul>
     </nav>
     <header class="header" id="header">
@@ -44,50 +47,77 @@
     </header>
     <main>
         <!-- DANI-->
-        <section class = "menu-section" id="menu-section">
-            <div class = "menu-title">
-                <h2 class = "menu-big-title" id="t-menu-title">BEST STEAKS IN BIFE</h2>
-                <h3 class = "menu-small-title" id="t-menu-subtitle">Menu</h3>
+        <section class="menu-section" id="menu-section">
+            <div class="menu-title">
+                <h2 class="menu-big-title" id="t-menu-title">BEST STEAKS IN BIFE</h2>
+                <h3 class="menu-small-title" id="t-menu-subtitle">Menu</h3>
             </div>
-            <div class = "menu-display">
-                <div class = "menu-images">
-                    <picture class = "menu-image">
-                        <img class= "menu-image-1" src="./images/menu-first-image.webp" alt="Image not found">
-                        <p class = "menu-name" id="t-menu-first-dish">Marinated Top Round Steak</p>
-                        <p class = "menu-price" id="t-menu-first-price">$20</p>
+            <div class="menu-display">
+                <div class="menu-images">
+                    <picture class="menu-image">
+                        <img class="menu-image-1" src="./images/menu-first-image.webp" alt="Image not found">
+                        <p class="menu-name" id="t-menu-first-dish">Marinated Top Round Steak</p>
+                        <p class="menu-price" id="t-menu-first-price">$20</p>
                     </picture>
-                    <picture class = "menu-image">
-                        <img class = "menu-image-1" src="./images/menu-second-image.webp" alt="Image not found">
-                        <p class = "menu-name" id="t-menu-second-dish">Ribeye Steaks With Garlic Marinade</p>
-                        <p class = "menu-price" id="t-menu-second-price">$25</p>
+                    <picture class="menu-image">
+                        <img class="menu-image-1" src="./images/menu-second-image.webp" alt="Image not found">
+                        <p class="menu-name" id="t-menu-second-dish">Ribeye Steaks With Garlic Marinade</p>
+                        <p class="menu-price" id="t-menu-second-price">$25</p>
                     </picture>
-                    <picture class ="menu-image">
-                        <img class = "menu-image-1" src="./images/menu-third-image.webp" alt="Image not found">
-                        <p class = "menu-name" id="t-menu-third-dish">Spiced Lime-Marinated Round Steaks</p>
-                        <p class = "menu-price menu-price-3" id="t-menu-third-price">$27</p>
+                    <picture class="menu-image">
+                        <img class="menu-image-1" src="./images/menu-third-image.webp" alt="Image not found">
+                        <p class="menu-name" id="t-menu-third-dish">Spiced Lime-Marinated Round Steaks</p>
+                        <p class="menu-price menu-price-3" id="t-menu-third-price">$27</p>
                     </picture>
                 </div>
             </div>
         </section>
         <!--Marc-->
-        <section class="reservation">
-            
+        <section class="block-form" id="block-form">
+            <div class="reservation" id="reservation">
+                <h3 id="t-reservation-title">Reservation</h3>
+            </div>
+            <form class="formulario" id="formulario" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <p class="hidden">
+                    <label>
+                      Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                  </p>
+                <div>
+                    <select name="menu" id="menu" required class="personaform">
+                        <option disabled selected id="t-reservation-num-pers">*Select the amount of people </option>
+                        <option value="1" id="t-reservation-num-pers-1">1 Person</option>
+                        <option value="2" id="t-reservation-num-pers-2">2 People</option>
+                        <option value="3" id="t-reservation-num-pers-3">3 People</option>
+                        <option value="4" id="t-reservation-num-pers-4">4 People</option>
+                        <option value="5" id="t-reservation-num-pers-5">5 People</option>
+                        <option value="6" id="t-reservation-num-pers-6">6 People</option>
+                    </select>
+                    <input class="personaform" type="date" required>
+                    <input class="personaform" type="time" required>
+                </div>
+                <div>
+                    <input class="personaform" type="number" placeholder="Phone" required id="t-reservation-phone">
+                    <input class="personaform" type="email" placeholder="Email" required id="t-reservation-email">
+                    <input class="lastperf" type="submit" name="Submit" required>
+                </div>
+            </form>
         </section>
         <!--Nahomy-->
-        <section class="about" id= "about__us">
-            <div class="inner-section">
-                <h2 class="about_title" id= "t-about-us-title">About Us</h2>
-                <p class="aboutus" id="t-about-us-text">
-                    Desde nuestra apertura en 1980, apostamos por lo nuevo y escaso: la especialización en carne de vacuno y buey. Con ello, nuestro restaurante se ha convertido en poco tiempo en un referente claro en este tipo de cocina y en uno de los templos de la carne por excelencia.</p>
-                <div class="skills">
-                    <a href="#contactus" id= "t-about-us-button"> Contact Us</a>
-                </div>
-    
-            </div>
-    
+        <section class="about" id="about__us">
             <picture class="aboutuspicture">
                 <img class="aboutusimage" src="./images/aboutus.png" alt="Image not found">
             </picture>
+            <div class="inner-section">
+                <h2 class="about_title" id="t-about-us-title">About Us</h2>
+                <p class="aboutus" id="t-about-us-text">
+                    Since our opening in 1980, we bet for the new and scarce: the specialization in beef and ox meat.
+                    Thanks to this, our restaurant has been able to become in no time a clear model in this type of
+                    cuisine and one of the meat temples by excellence.
+                <div class="skills">
+                    <a href="#contactus" id="t-about-us-button"> Contact Us</a>
+                </div>
+            </div>
         </section>
     </main>
     <!--Alexandra-->
@@ -98,16 +128,22 @@
             </picture>
             <div class="contactus__info">
                 <h2 class="contact__title" id="t-contact-us-title">Contact Us</h2>
-                <p class="contact__text"><span id="t-contact-us-email-1">Email: </span><a class="contact__link" id="t-contact-us-email-2" href="mailto:biferestaurant@gmail.com"> biferestaurant@gmail.com </a></p>
-                <p class="contact__text"><span id="t-contact-us-phone-1">Phone: </span><a class="contact__link" id="t-contact-us-phone-2" href="tel:+933268350"> 933268350 </a></p>
+                <p class="contact__text"><span id="t-contact-us-email-1">Email: </span><a class="contact__link"
+                        id="t-contact-us-email-2" href="mailto:biferestaurant@gmail.com"> biferestaurant@gmail.com </a>
+                </p>
+                <p class="contact__text"><span id="t-contact-us-phone-1">Phone: </span><a class="contact__link"
+                        id="t-contact-us-phone-2" href="tel:+933268350"> 933268350 </a></p>
                 <p class="contact__text" id="t-contact-us-location">Carrer de Sant Salvador 61, 08024</p>
             </div>
         </section>
         <section class="footer__contacts">
             <ul class="contacts__social">
-                <li class="social__item"><a target="_blank" href="https://www.facebook.com/"><img class="social__image" src="./images/facebook.png" alt="facebook"></a></li>
-                <li class="social__item"><a target="_blank" href="https://twitter.com/"><img class="social__image" src="./images/twitter.png" alt="twitter"></a></li>
-                <li class="social__item"><a target="_blank" href="https://www.google.by/"><img class="social__image" src="./images/google.png" alt="google+"></a></li>
+                <li class="social__item"><a target="_blank" href="https://www.facebook.com/"><img class="social__image"
+                            src="./images/facebook.png" alt="facebook"></a></li>
+                <li class="social__item"><a target="_blank" href="https://twitter.com/"><img class="social__image"
+                            src="./images/twitter.png" alt="twitter"></a></li>
+                <li class="social__item"><a target="_blank" href="https://www.google.by/"><img class="social__image"
+                            src="./images/google.png" alt="google+"></a></li>
             </ul>
             <p class="contacts__copyright"> © 2022 Bife </p>
         </section>

@@ -32,12 +32,12 @@ body {
 }
 .logo__image {
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
 }
 .nav__items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     width: 70%;
@@ -88,7 +88,6 @@ body {
 }
   
 @media screen and (max-width:768px) {
-    
     .burger {
         position: absolute;
         cursor: pointer;
@@ -109,7 +108,7 @@ body {
         width: 100%;
         color: #AC664D;
         flex-direction: column;
-        top: 10px;
+        top: 40px;
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
         transition: all 1s ease-out;
@@ -145,6 +144,15 @@ body {
     .item:nth-child(4) {
         transition: all 0.5s ease 0.8s;
     }
+    .item:nth-child(5) {
+        transition: all 0.5s ease 0.10s;
+    }
+    .item:nth-child(6) {
+        transition: all 0.5s ease 0.12s;
+    }
+    .item:nth-child(7) {
+        transition: all 0.5s ease 0.14s;
+    }
     .item.fade {
         opacity: 1;
     }
@@ -167,13 +175,17 @@ body {
 }
 
 /*Dani*/
-.menu-section{
+.menu-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     min-height: 732px;
     background-color: #AC664D;
     padding-top: 2rem;
 }
 
-.menu-title{
+.menu-title {
     background-color: #541C0A;
     height: 5rem;
     margin-left: 32%;
@@ -181,14 +193,14 @@ body {
     box-shadow: 0px 0px 4px 4px #541C0A;
 }
 
-.menu-big-title{
+.menu-big-title {
     font-size: 1.5rem;
     color:  #AC664D;
     text-align:center;
     padding-top: 0.8rem;
 }
 
-.menu-small-title{
+.menu-small-title {
     font-size: 1.2rem;
     color:  #AC664D;
     text-align: center;
@@ -197,12 +209,11 @@ body {
 
 .menu-display{
     background-color: #541C0A;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
     padding: 2rem 2rem 0 2rem;
     display: grid;
     box-shadow: 0px 0px 4px 4px #541C0A;
+    width: 80vw;
 }
 
 .menu-images{
@@ -261,33 +272,116 @@ body {
     }
 }
 /*Marc*/
-
+.block-form{
+    display: flex;
+    background-color: #AC664D;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+   }
+.hidden {display: none;}
+.formulario{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #541C0A; 
+    box-shadow: 0px 0px 4px 4px #541C0A;
+    text-align:center ;
+    height: 40vh;
+    width: 70vw;
+    margin: 1rem;
+}
+.personaform {
+   width: 25rem;
+   height: 3rem;
+   background: #C0B09E;
+   border: 0.0625rem solid #000000;
+   box-sizing: border-box;
+   display: block;
+   margin: 1rem;
+   border-radius: 10px;
+   text-align: center;
+}
+.lastperf {
+    width: 15rem;
+    height: 2rem;
+    margin: 1rem;
+    background: #EAC3B5;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+.reservation{
+   display:flex;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   height: 4rem;
+   width: 20rem;
+   color: #FFFFFF;
+   font-size: 26px;
+   line-height: 36px;
+   background-color: #541C0A;
+   box-shadow: 0px 0px 4px 4px #541C0A;
+}
+@media screen and (max-width:768px) {
+    .formulario{
+        height: 80vh;
+    }
+    .reservation{
+        height: 3rem;
+        width: 15rem;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .personaform {
+        width: 17rem;
+        height: 2rem;
+    }
+}
+@media screen and (max-width:480px) {
+    .personaform {
+        width: 10rem;
+        height: 2rem;
+    }
+    .reservation{
+        height: 3rem;
+        width: 15rem;
+    }
+}
 /*Nahomy*/
 .about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     background-color: #AC664D;
     overflow: hidden;
     padding: 100px 0;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
 }
 .inner-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     float: right;
     background-color: #541C0A;
     padding: 109px;
     box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
+    margin: 2rem;
 }
 .inner-section h1{
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
 }
-
 .about_title{
     font-size: 36px;
     line-height: 46px;
@@ -301,6 +395,11 @@ body {
     line-height: 46px;
     color: #FFFFFF;
     text-align:justify;
+    color: #AC664D;
+}
+.aboutusimage {
+    width: 100%;
+    margin: 2rem;
 }
 .skills a{
     font-size: 22px;
@@ -315,13 +414,11 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-
 .skills{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .skills a:hover{
     transition: 1s;
     background-color: #ecf5f5;
@@ -341,7 +438,6 @@ body {
         width: 100%;
     }
 }
-
 @media screen and (max-width:600px){
     .about{
         padding: 0;
@@ -356,16 +452,6 @@ body {
         width: 160px;
     }
 }
-
-div.container {
-    width: 96%;
-    max-width: 960px;
-    margin: 0 auto;
-    }
-    img {
-    width: 100%;
-    height: auto;
-    }
 /*Alexandra*/
 .contactus {
     min-height: 408px;
@@ -386,8 +472,10 @@ div.container {
     flex-direction: column;
     justify-content: space-evenly;
     color: #AC664D;
+    margin: 1.5rem;
 }
 .contact__title {
+    color: #FFFFFF;
     font-size: 3rem;
     line-height: 57px;
     text-align: center;

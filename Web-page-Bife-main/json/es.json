@@ -17,6 +17,19 @@
       "menu_third_dish": "Bistec Especiado Marinado Con Limón",
       "menu_third_price": "23,90€"
     },
+    "reservation":{
+      "reservation_title": "Reserva",
+      "reservation_num_pers": "*Selecciona el número de personas",
+      "reservation_num_pers_1": "1 persona",
+      "reservation_num_pers_2": "2 personas",
+      "reservation_num_pers_3": "3 personas",
+      "reservation_num_pers_4": "4 personas",
+      "reservation_num_pers_5": "5 personas",
+      "reservation_num_pers_6": "6 personas",
+      "reservation_phone": "Teléfono",
+      "reservation_email": "Email",
+      "reservation_button": "Enviar"
+  },
     "about_us":{
       "about_us_title": "Acerca De Nosotros",
       "about_us_text": "Desde nuestra apertura en 1980, apostamos por lo nuevo y escaso: la especialización en carne de vacuno y buey. Con ello, nuestro restaurante se ha convertido en poco tiempo en un referente claro en este tipo de cocina y en uno de los templos de la carne por excelencia.",
