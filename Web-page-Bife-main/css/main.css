@@ -285,7 +285,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
     justify-content: space-evenly;
     align-items: center;
     background-color: #541C0A; 
@@ -293,11 +292,11 @@ body {
     text-align:center ;
     height: 40vh;
     width: 70vw;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 .personaform {
-   width: 25rem;
-   height: 3rem;
+   width: 17rem;
+   height: 2.8rem;
    background: #C0B09E;
    border: 0.0625rem solid #000000;
    box-sizing: border-box;
@@ -321,6 +320,7 @@ body {
    align-items: center;
    height: 4rem;
    width: 20rem;
+   margin-bottom: 1rem;
    color: #FFFFFF;
    font-size: 26px;
    line-height: 36px;
@@ -329,7 +329,7 @@ body {
 }
 @media screen and (max-width:768px) {
     .formulario{
-        height: 80vh;
+        height: 70vh;
     }
     .reservation{
         height: 3rem;
@@ -343,6 +343,9 @@ body {
     }
 }
 @media screen and (max-width:480px) {
+    .formulario{
+        height: 60vh;
+    }
     .personaform {
         width: 10rem;
         height: 2rem;
@@ -371,7 +374,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 50%;
-    float: right;
     background-color: #541C0A;
     padding: 109px;
     box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
@@ -399,7 +401,6 @@ body {
 }
 .aboutusimage {
     width: 100%;
-    margin: 2rem;
 }
 .skills a{
     font-size: 22px;
@@ -436,6 +437,7 @@ body {
     }
     .inner-section{
         width: 100%;
+        margin-right: 2rem;
     }
 }
 @media screen and (max-width:600px){
@@ -450,6 +452,9 @@ body {
         font-size: 19px;
         padding: 5px;
         width: 160px;
+    }
+    .aboutuspicture {
+        margin-right :3rem;
     }
 }
 /*Alexandra*/

@@ -77,14 +77,13 @@
             <div class="reservation" id="reservation">
                 <h3 id="t-reservation-title">Reservation</h3>
             </div>
-            <form class="formulario" id="formulario" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form class="formulario" id="formulario" name ="Reserva" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <p class="hidden">
                     <label>
                       Don’t fill this out if you’re human: <input name="bot-field" />
                     </label>
                   </p>
-                <div>
-                    <select name="menu" id="menu" required class="personaform">
+                    <select name="num-pers" id="menu" required class="personaform">
                         <option disabled selected id="t-reservation-num-pers">*Select the amount of people </option>
                         <option value="1" id="t-reservation-num-pers-1">1 Person</option>
                         <option value="2" id="t-reservation-num-pers-2">2 People</option>
@@ -93,14 +92,13 @@
                         <option value="5" id="t-reservation-num-pers-5">5 People</option>
                         <option value="6" id="t-reservation-num-pers-6">6 People</option>
                     </select>
-                    <input class="personaform" type="date" required>
-                    <input class="personaform" type="time" required>
-                </div>
-                <div>
-                    <input class="personaform" type="number" placeholder="Phone" required id="t-reservation-phone">
-                    <input class="personaform" type="email" placeholder="Email" required id="t-reservation-email">
-                    <input class="lastperf" type="submit" name="Submit" required>
-                </div>
+                    <input name="date" class="personaform" type="date" required>
+                    <input name="time" class="personaform" type="time" required>
+                
+                    <input name="phone-number" class="personaform" type="number" placeholder="Phone" required id="t-reservation-phone">
+                    <input name="email" class="personaform" type="email" placeholder="Email" required id="t-reservation-email">
+                    <button class="lastperf" type="submit" name="Submit" required>Send</button>
+                
             </form>
         </section>
         <!--Nahomy-->

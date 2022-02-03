@@ -50,6 +50,7 @@ async function changeLanguage(lang) {
   document.getElementById('t-reservation-num-pers-6').innerHTML = data.web.reservation.reservation_num_pers_6;
   document.getElementById('t-reservation-phone').placeholder = data.web.reservation.reservation_phone;
   document.getElementById('t-reservation-email').placeholder = data.web.reservation.reservation_email;
+  document.getElementById('t-reservation-button').placeholder = data.web.reservation.reservation_button;
 
   document.getElementById('t-about-us-title').innerHTML = data.web.about_us.about_us_title;
   document.getElementById('t-about-us-text').innerHTML = data.web.about_us.about_us_text;
