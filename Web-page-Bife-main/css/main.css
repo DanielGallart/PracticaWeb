@@ -446,7 +446,8 @@ body {
         flex-direction: column;
     }
     .inner-section{
-        padding: 60px;
+        padding: 2rem;
+        width: 80%;
     }
     .skills a{
         font-size: 19px;
@@ -454,7 +455,10 @@ body {
         width: 160px;
     }
     .aboutuspicture {
-        margin-right :3rem;
+        margin: 1rem;
+    }
+    .aboutus{
+        font-size: 1.1rem;
     }
 }
 /*Alexandra*/
@@ -465,6 +469,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background: #541C0A;
+    box-shadow: 0px 0px 4px 4px #541C0A;
 }
 .contactus__picture {
     margin: 20px;
@@ -502,6 +507,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     background: #4B1409;
+    box-shadow: 0px 0px 4px 4px #4B1409;
 }
 .contacts__social {
     display: flex;
